@@ -35,7 +35,9 @@ sort-it.exe -d -s out.txt in1.txt in2.txt (для строк по убывани
 in1.txt in2.txt in3.txt out.txt
 
 1    1    1
+
 4    8   27
+
 9   27    3
  
 Результат:
