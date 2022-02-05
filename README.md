@@ -36,7 +36,7 @@ in1.txt in2.txt in3.txt out.txt
 
 1    4    9
 
-1    8   27
+4    8   27
 
 1    2    3
  
@@ -47,6 +47,7 @@ in1.txt in2.txt in3.txt out.txt
 1
 
 2
+
 3
 
 4
