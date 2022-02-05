@@ -40,6 +40,7 @@ sort-it.exe -d -s out.txt in1.txt in2.txt (для строк по убывани
 in1.txt in2.txt in3.txt out.txt
 
 **in1**
+
 1    
 
 4
@@ -47,13 +48,15 @@ in1.txt in2.txt in3.txt out.txt
 9
 
 **in2**
+
 1
 
 8
 
 27
  
-**in3** 
+**in3**
+
 1
 
 2
