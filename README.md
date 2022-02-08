@@ -1,84 +1,17 @@
-Курс JAVA.
+**A program for sorting by merging multiple files.**
 
-**Описание задачи: Написать программу сортировки слиянием нескольких файлов.**
+Input files contain data of one of two types: integers or strings. The data is written in a column (each line of the file is a new element). Strings can contain any non-whitespace characters, strings with spaces are considered erroneous. It is also assumed that the files are pre-sorted.
 
-Входные файлы содержат данные одного из двух видов: целые числа или строки. Данные записаны в столбик (каждая строка файла – новый элемент). Строки могут содержать любые не пробельные символы, строки с пробелами считаются ошибочными. Также считается, что файлы предварительно отсортированы.
+The result of the program should be a new file with the combined contents of the input files, sorted in ascending or descending order by merge sorting.
+If the contents of the source files do not allow for merge sorting (for example, the sorting order is broken), partial sorting is performed (as far as possible for this algorithm, how exactly to process the corrupted file is at the discretion of the developer). The output file should contain sorted data even in case of errors, however, erroneous data may be lost.
 
-Результатом работы программы должен являться новый файл с объединенным содержимым входных файлов, отсортированным по возрастанию или убыванию путем сортировки слиянием.
-Если содержимое исходных файлов не позволяет произвести сортировку слиянием (например, нарушен порядок сортировки), производится частичная сортировка (насколько возможно для этого алгоритма, как именно обрабатывать поврежденный файл – на усмотрение разработчика). Выходной файл должен содержать отсортированные данные даже в случае ошибок, однако возможна потеря ошибочных данных.
-
-Необходимо самостоятельно реализовать алгоритм сортировки методом слияния и использовать его для сортировки содержимого файлов. Не использовать библиотечные функции сортировки. Алгоритм должен быть устойчив к большим файлам, не помещающимся целиком в оперативную память.
-
-Все возможные виды ошибок должны быть обработаны. Программа не должна «падать». Если после ошибки продолжить выполнение невозможно, программа должна сообщить об этом пользователю с указанием причины неудачи. Частичная обработка при наличии ошибок более предпочтительна чем останов программы. Код программы должен быть «чистым».
-Для реализации необходимо использовать язык программирования Java, допустимо использовать стандартные системы сборки проекта (Maven, Gradle)
-
-Решение принимается в виде исходного кода проекта.
-
-**Параметры программы задаются при запуске через аргументы командной строки, по порядку:**
-
-1. режим сортировки (-a или -d), необязательный, по умолчанию сортируем по возрастанию;
-2. тип данных (-s или -i), обязательный;
-3. имя выходного файла, обязательное;
-4. остальные параметры – имена входных файлов, не менее одного.
+**Program parameters are set at startup via command line arguments, in order:**
+1. sorting mode (-a or -d), optional, sorted in ascending order by default;
+2. data type (-s or -i), required;
+3. the name of the output file, required;
+4. the other parameters are the names of the input files, at least one.
  
-**Примеры запуска из командной строки для Windows:**
-sort-it.exe -i -a out.txt in.txt (для целых чисел по возрастанию); 
-sort-it.exe -s out.txt in1.txt in2.txt in3.txt (для строк по возрастанию); 
-sort-it.exe -d -s out.txt in1.txt in2.txt (для строк по убыванию); 
-
-**К решению должна прилагаться инструкция по запуску. В ней можно отображать особенности реализации, не уточненные в задании. В частности, в инструкции необходимо указывать:**
-
-• версию Java;
-
-• при использовании системы сборки – указать систему сборки и ее версию;
-
-• при использовании сторонних библиотек указать их название и версию, а также приложить ссылки на такие библиотеки (можно в формате зависимостей системы сборки).
-
-
-**Пример**:
-
-in1.txt in2.txt in3.txt out.txt
-
-**in1**
-
-1    
-
-4
-
-9
-
-**in2**
-
-1
-
-8
-
-27
- 
-**in3**
-
-1
-
-2
-
-3
-
-
-**Результат**:
-
-1
-
-1
-
-2
-
-3
-
-4
-
-8
-
-9
-
-27
-
+**Examples of starting from the command line for Windows:**
+1. sort-it.exe -i -a out.txt in.txt (for integers in ascending order);
+2. sort-it.exe -s out.txt in1.txt in2.txt in3.txt (for ascending rows);
+3. sort-it.exe -d -s out.txt in1.txt in2.txt (for descending rows)
