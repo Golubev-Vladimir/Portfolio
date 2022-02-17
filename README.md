@@ -1,5 +1,5 @@
 ## A program for sorting by merging multiple files.
-#### It was carried out as part of independent training1
+#### It was carried out as part of independent training
 
 Input files contain data of one of two types: integers or strings. The data is written in a column (each line of the file is a new element). Strings can contain any non-whitespace characters, strings with spaces are considered erroneous. It is also assumed that the files are pre-sorted.
 
