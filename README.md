@@ -1,4 +1,5 @@
-**A program for sorting by merging multiple files.**
+## A program for sorting by merging multiple files.
+#### It was carried out as part of independent training1
 
 Input files contain data of one of two types: integers or strings. The data is written in a column (each line of the file is a new element). Strings can contain any non-whitespace characters, strings with spaces are considered erroneous. It is also assumed that the files are pre-sorted.
 
@@ -15,3 +16,12 @@ If the contents of the source files do not allow for merge sorting (for example,
 1. sort-it.exe -i -a out.txt in.txt (for integers in ascending order);
 2. sort-it.exe -s out.txt in1.txt in2.txt in3.txt (for ascending rows);
 3. sort-it.exe -d -s out.txt in1.txt in2.txt (for descending rows)
+
+**Приложение написано на Java. Пример кода:**
+```java
+public class Practicum {
+    public static void main(String[] args) {
+    }
+}
+```
+------
