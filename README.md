@@ -17,7 +17,7 @@ If the contents of the source files do not allow for merge sorting (for example,
 2. sort-it.exe -s out.txt in1.txt in2.txt in3.txt (for ascending rows);
 3. sort-it.exe -d -s out.txt in1.txt in2.txt (for descending rows)
 
-**Приложение написано на Java. Пример кода:**
+**The application is written in Java. Code example:**
 ```java
 public class Practicum {
     public static void main(String[] args) {
